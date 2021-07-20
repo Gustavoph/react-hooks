@@ -1,13 +1,13 @@
 import './styles.css';
 import { PostsProvider } from '../../contexts/PostsProvider';
-import { Posts } from '../../components/Posts';
 import { CounterProvider } from '../../contexts/CounterProvider';
+import { Home } from '../Home';
 
 export default function App() {
   return (
     <CounterProvider>
       <PostsProvider>
-        <Posts />
+        <Home />
       </PostsProvider>
     </CounterProvider>
   );
